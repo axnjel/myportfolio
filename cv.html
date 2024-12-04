@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container"></div>
+        <header class="header">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Back to Portfolio</a>
+            </nav>
+        </header>
+        <section id="home" class="home">
+            <div class="cv">
+                <img src="CV.jpeg" alt="Curriculum Vitae">
+            </div>
+        </section>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

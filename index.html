@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#home" class="logo">Portfolio</a>
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+            <nav class="navbar">
+                <a href="#aboutme">About Me</a>
+                <a href="#experience">Organization Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="cv.html">Curriculum Vitae</a>
+                <a href="#contactme" class="contact">Contact Me</a>
+            </nav>
+        </header>
+        <section id="home" class="home">
+            <div class="home-content">
+                <h3>ANGELICA HANDAKA</h3>
+                <h1>Front End Developer</h1>
+                <p>5th semester computer science student anticipating graduation in 2026. Seeking an internship to
+                    expand my experience in website and application designing, also contribute to the success of
+                    my company.</p>
+            </div>
+            <div class="img-box">
+                <img src="inifoto.jpeg" alt="Angelica Handaka">
+            </div>
+        </section>
+        <section id="aboutme" class="about">
+            <div class="fotojuga">
+                <img src="fotojuga.jpg" alt="Additional Photo">
+            </div>
+            <div class="about-content">
+                <h3>About Me</h3>
+                <p>Hardworking and creative computer science student majoring in database technology, currently in my 5th semester. Interested in design, including in UI&UX design. Skilled in HTML, CSS, JavaScript, ReactJS and SQL. Having high flexibility makes me adapt easily and able to work with my colleagues or work by myself, while critical thinking enhances my decision-making and problem-solving skills.</p>
+            </div>
+        </section>
+
+        <section id="experience" class="exp">
+            <div class="experience-content">
+                <h3>My Organization Experience</h3>
+                <p>I have been an activist and successfully organized a workshop as a presenter with a special guest at Bina Nusantara University Himpunan Mahasiswa Teknik Informatika (HIMTI).</p>
+            </div>
+            <div class="foto">
+                <img src="himti.jpeg" alt="HIMTI Workshop">
+            </div>
+        </section>
+
+        <section id="projects" class="proj">
+            <div class="projects-content">
+                <h3>My Projects</h3>
+
+                <div class="project">
+                    <h2>1st Project: <span>AllGadget</span></h2>
+                    <p>This is a design for an e-commerce website called 'AllGadget,' offering various types of gadgets.
+                        This is my first design for a website, created in 2023.</p>
+                    <img src="gad1.jpeg" alt="AllGadget Project 1">
+                    <img src="gad2.jpeg" alt="AllGadget Project 2">
+                    <img src="hcicode.png" alt="AllGadget Project Code">
+                </div>
+
+                <div class="project">
+                    <h2>2nd Project: <span>Calm</span></h2>
+                    <p>This is a design for a website called 'Calm' that helps users address their mental health issues
+                        by providing articles and allows them to make appointments with professionals. This was created in 2023.</p>
+                    <img src="calm1.jpeg" alt="Calm Project 1">
+                    <img src="calm2.jpeg" alt="Calm Project 2">
+                </div>
+
+                <div class="project">
+                    <h2>3rd Project: <span>MoneyWise</span></h2>
+                    <p>This is a design for an application called 'MoneyWise' that helps users manage their finances,
+                        tracking incomes and expenses. This is my first application design, created in 2024.</p>
+                    <img src="money1.jpeg" alt="MoneyWise Project 1">
+                    <img src="money2.jpeg" alt="MoneyWise Project 2">
+                </div>
+
+                <div class="project">
+                    <h2>4th Project: <span>Mangluv</span></h2>
+                    <p>This F&B logo brand design was created in 2024 that i drew it myself. My team and I own this food and beverage company called 'Mangluv' for the college project. Mangluv also attends Bina Nusantara University' BIFEST bazaar.</p>
+                    <img src="mangluvlogo.jpeg" alt="Mangluv">
+                </div>
+            </div>
+        </section>
+
+        <footer id="contactme" class="footer">
+            <h2>My Contacts</h2>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/angelica-handaka/"><i class="fa-brands fa-linkedin"></i> Angelica
+                    Handaka</a>
+                <a href="mailto:angelicahandaka24@gmail.com"><i class="fa-regular fa-envelope"></i>
+                    angelicahandaka24@gmail.com</a>
+                <a href="https://api.whatsapp.com/send?phone=6285956143747"><i class="fa-brands fa-whatsapp"></i> (+62)
+                    859-5614-3747</a>
+            </div>
+            <p><i class="fa-regular fa-copyright"></i> 2024 Angelica Handaka | All Rights Reserved</p>
+        </footer>
+    </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
